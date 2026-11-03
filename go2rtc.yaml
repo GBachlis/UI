@@ -1,0 +1,7 @@
+streams:
+  cam1: rtsp://adminsat:asatisgaysat@192.168.88.25:554/stream1
+  cam2: rtsp://adminsat:asatisgaysat@192.168.88.20:554/stream1
+  cam3: rtsp://adminsat:asatisgaysat@192.168.88.66:554/stream1
+  cam4: rtsp://adminsat:asatisgaysat@192.168.88.26:554/stream1
+  cam5: rtsp://adminsat:asatisgaysat@192.168.88.49:554/stream1
+  cam6: rtsp://adminsat:asatisgaysat@192.168.88.56:554/stream1

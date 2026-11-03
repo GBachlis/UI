@@ -1,0 +1,10 @@
+#ifndef CONFIG_H
+#define CONFIG_H
+
+#define REMOTE_WS_IP "192.168.88.14" //192.168.88.14
+#define REMOTE_WS_SECONDARY_IP "192.168.88.54 "
+#define REMOTE_WS_PORT 8080
+#define FRONTEND_PORT 8081
+
+#endif // CONFIG_H
+
