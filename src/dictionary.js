@@ -25,10 +25,10 @@ function DictionaryPlugin() {
             ...Array.from({ length: 8 }, (_, i) => ({ key: `tc-${i + 1}`, name: `TC-${i + 1}`, type: 'rocket.temp', unit: '°C', range: [0, 1200] })),
             
             // Και τα 5 RTD ολογράφως για να διαβαστούν σίγουρα από το JSON
-            { key: 'rtd-1', name: 'RTD-1', type: 'rocket.temp', unit: '°C', range: [-200, 200] },
-            { key: 'rtd-2', name: 'RTD-2', type: 'rocket.temp', unit: '°C', range: [-200, 200] },
-            { key: 'rtd-3', name: 'RTD-3', type: 'rocket.temp', unit: '°C', range: [-200, 200] },
-            { key: 'rtd-4', name: 'RTD-4', type: 'rocket.temp', unit: '°C', range: [-200, 200] },
+            { key: 'rtd-vent', name: 'RTD-VENT', type: 'rocket.temp', unit: '°C', range: [-200, 200] },
+            { key: 'rtd-middle', name: 'RTD-MIDDLE', type: 'rocket.temp', unit: '°C', range: [-200, 200] },
+            { key: 'rtd-top', name: 'RTD-TOP', type: 'rocket.temp', unit: '°C', range: [-200, 200] },
+            { key: 'rtd-bottom', name: 'RTD-BOTTOM', type: 'rocket.temp', unit: '°C', range: [-200, 200] },
             { key: 'rtd-5', name: 'RTD-5', type: 'rocket.temp', unit: '°C', range: [-200, 200] },
 
             { key: 'lc-t', name: 'LC-T (Thrust)', type: 'rocket.weight', unit: 'kgf', range: [0, 5000] },

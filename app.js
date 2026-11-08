@@ -27,7 +27,7 @@ openmct.install(openmct.plugins.Conductor({
 // TELEMETRY FIRST
 // ==========================================
 
-const BACKEND_URL = 'ws://192.168.88.54:8081';
+const BACKEND_URL = 'ws://192.168.88.42:8081';
 
 openmct.install(
     TelemetryPlugin(BACKEND_URL)

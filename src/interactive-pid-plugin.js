@@ -137,9 +137,9 @@ function InteractivePIDPlugin() {
                             { key: 'tc-8', name: 'TC-8', type: 'rocket.temp', unit: '°C', top: '69%', left: '35%' },
 
                             // --- RTDs ---
-                            { key: 'rtd-1', name: 'RTD-1', type: 'rocket.temp', unit: '°C', top: '10%', left: '75%' },
-                            { key: 'rtd-2', name: 'RTD-2', type: 'rocket.temp', unit: '°C', top: '15%', left: '75%' },
-                            { key: 'rtd-3', name: 'RTD-3', type: 'rocket.temp', unit: '°C', top: '20%', left: '75%' },
+                            { key: 'rtd-vent', name: 'RTD-VENT', type: 'rocket.temp', unit: '°C', top: '10%', left: '75%' },
+                            { key: 'rtd-middle', name: 'RTD-MIDDLE', type: 'rocket.temp', unit: '°C', top: '15%', left: '75%' },
+                            { key: 'rtd-top', name: 'RTD-TOP', type: 'rocket.temp', unit: '°C', top: '20%', left: '75%' },
 
                             // --- LOAD CELLS (Weight) ---
                             { key: 'lc-t', name: 'LC-T (Thrust)',      type: 'rocket.weight', unit: 'kgf', top: '6%', left: '50%' },

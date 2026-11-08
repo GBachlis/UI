@@ -36,10 +36,10 @@ sensor_id_map_t sensor_id_map[] = {
     {0x412, 0.0, "TC-6"},
     {0x41A, 0.0, "TC-7"},
     {0x422, 0.0, "TC-8"},
-    {0x509, 0.0, "RTD-1"}, // RTDs: Index 10 - 12
-    {0x511, 0.0, "RTD-2"},
-    {0x519, 0.0, "RTD-3"},
-    {0x521, 0.0, "RTD-4"},
+    {0x509, 0.0, "RTD-VENT"}, // RTDs: Index 10 - 12
+    {0x511, 0.0, "RTD-MIDDLE"},
+    {0x519, 0.0, "RTD-TOP"},
+    {0x521, 0.0, "RTD-BOTTOM"},
     {0x529, 0.0, "RTD-5"},
     {0x118, 1.0, "PT-M1"}, // Blue 1 // Pressure Transducers: Index 13 - 21 vghke to blue 1(10a) to kanw red 3(118)
     {0x000, 1.0, "PT-M2"}, // Blue 3 
@@ -145,12 +145,19 @@ double apply_sensor_calculations(size_t index, uint16_t sensor_value) {
         case 23: // PT-FS
             return (((3.3*sensor_value)/65536)*(100/5)*(23.3/13.3)+sensor_offset_map[sensor_id_map[index].id]);
         case 24: // R-EMBV
+            return(sensor_value);
         case 25: // R-LMBV
-        case 26: // R-EVBV
-        case 27: // R-LVBV
+            return (1.5*sensor_value+0.5);
+        case 26:
+            return(sensor_value);
+        case 27:
+            return(sensor_value); 
         case 28:
+            return(sensor_value);
         case 29:
+            return(sensor_value);
         case 30:
+            return(sensor_value);
         case 31:
             return (double)sensor_value; //number
         case 32: // LC-T
