@@ -98,7 +98,7 @@ function SetResetPlugin() {
                             const payload = `${numericId}#${commandType}`; 
                             
                             // ΑΛΛΑΞΕ ΤΟ IP ΕΔΩ ΑΝ ΧΡΕΙΑΖΕΤΑΙ (Πρέπει να είναι το ίδιο με το app.js)
-                            const WS_URL = 'ws://192.168.88.42:8081'; 
+                            const WS_URL = 'ws://' + window.location.hostname + ':8081/';
                             
                             statusDiv.innerText = 'Σύνδεση...';
                             statusDiv.style.color = '#aaa';

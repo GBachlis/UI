@@ -147,7 +147,7 @@ double apply_sensor_calculations(size_t index, uint16_t sensor_value) {
         case 24: // R-EMBV
             return(sensor_value);
         case 25: // R-LMBV
-            return (1.5*sensor_value+0.5);
+            return (1.5*sensor_value);
         case 26:
             return(sensor_value);
         case 27:
